@@ -1,0 +1,100 @@
+<!-- projects.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | Arquitecno</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="section">
+    <div class="container">
+      <h1 class="h1">Proyectos</h1>
+      <p class="p"></p>
+
+      <div class="grid">
+        <button class="card cardBtn" type="button" onclick="openProject(1)">
+          <img src="./assets/img/Project01.jpg" alt="Proyecto 01">
+          <div class="card__body">
+            <h3>Proyecto 01</h3>
+            <p class="desc">Desarrollo arquitectónico integral.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(2)">
+          <img src="./assets/img/Project02.jpg" alt="Proyecto 02">
+          <div class="card__body">
+            <h3>Proyecto 02</h3>
+            <p class="desc">Planeación ejecutiva y control.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(3)">
+          <img src="./assets/img/Project03.jpg" alt="Proyecto 03">
+          <div class="card__body">
+            <h3>Proyecto 03</h3>
+            <p class="desc">Diseño interior.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(4)">
+          <img src="./assets/img/Project04.jpg" alt="Proyecto 04">
+          <div class="card__body">
+            <h3>Proyecto 04</h3>
+            <p class="desc">Supervisión de obra.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(5)">
+          <img src="./assets/img/Project05.jpg" alt="Proyecto 05">
+          <div class="card__body">
+            <h3>Proyecto 05</h3>
+            <p class="desc">Gestión documental.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(6)">
+          <img src="./assets/img/Project06.jpg" alt="Proyecto 06">
+          <div class="card__body">
+            <h3>Proyecto 06</h3>
+            <p class="desc">Optimización de costos.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(7)">
+          <img src="./assets/img/Project07.jpg" alt="Proyecto 07">
+          <div class="card__body">
+            <h3>Proyecto 07</h3>
+            <p class="desc">Coordinación técnica.</p>
+          </div>
+        </button>
+
+        <button class="card cardBtn" type="button" onclick="openProject(8)">
+          <img src="./assets/img/Project08.jpg" alt="Proyecto 08">
+          <div class="card__body">
+            <h3>Proyecto 08</h3>
+            <p class="desc">Cierre y entrega.</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__backdrop" onclick="closeProject()"></div>
+
+    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Cerrar" onclick="closeProject()">×</button>
+
+      <img id="modalImg" src="" alt="" class="modal__img">
+      <h2 id="modalTitle" class="modal__title"></h2>
+      <p id="modalDesc" class="modal__desc"></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

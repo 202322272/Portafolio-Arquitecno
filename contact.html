@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Arquitecno</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- MEMBRETE ELIMINADO EN CONTACTO -->
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/img/Logo.png" alt="Arquitecno logo" class="brand__logo">
+        <div class="brand__text">
+          <span class="brand__name">ARQUITECNO</span>
+          <span class="brand__sub">S.A. de C.V.</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="./index.html" class="nav__link">Inicio</a>
+        <a href="./projects.html" class="nav__link">Proyectos</a>
+        <a href="./contact.html" class="nav__link is-active">Contacto</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" id="mobileMenu">
+      <a href="./index.html">Inicio</a>
+      <a href="./projects.html">Proyectos</a>
+      <a href="./contact.html">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h1 class="h1">Contacto</h1>
+          <p class="p">Envíanos un mensaje y te respondemos a la brevedad.</p>
+        </div>
+
+        <div class="contactGrid">
+          <form class="form" id="contactForm">
+            <label>Nombre
+              <input type="text" name="name" placeholder="Tu nombre" required>
+            </label>
+
+            <label>Correo
+              <input type="email" name="email" placeholder="tucorreo@dominio.com" required>
+            </label>
+
+            <label>Mensaje
+              <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto (ubicación, m2 aproximados, necesidades y fecha estimada)" required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <p class="small muted" id="formMsg" aria-live="polite"></p>
+          </form>
+
+          <aside class="contactCard">
+            <h2 class="h2">Información real</h2>
+            <p class="p">Datos de contacto de ARQUITECNO S.A. de C.V.</p>
+
+            <ul class="list">
+              <li><strong>Dirección:</strong> Huizilihuitl #30, Col. La Preciosa, Azcapotzalco, CDMX</li>
+              <li><strong>C.P.:</strong> 22459</li>
+              <li><strong>Teléfono:</strong> <a href="tel:+525557779756">+52 55 5777 9756</a></li>
+              <li><strong>Correo:</strong> <a href="mailto:proyectos@arquitecno.com">proyectos@arquitecno.com</a></li>
+            </ul>
+
+            <div class="miniNote">
+              <p class="small muted">
+                Atención previa cita. Si tu solicitud es urgente, incluye horario de contacto y ubicación del proyecto.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> ARQUITECNO S.A. de C.V.</p>
+      <p class="muted">Contacto</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
