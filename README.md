@@ -74,10 +74,14 @@ Mi Portafolio/
 
 ## Publicación en la nube  ( Azure Blob Storage)
 
-El portafolio web fue publicado como sitio web estático utilizando *Microsoft Azure Blob Storage*.
+El portafolio web fue desarrollado de manera manual utilizando *HTML5, CSS3 y JavaScript*, sin frameworks externos.
 
-*URL pública:*
+El proyecto fue probado localmente mediante *Live Server* y posteriormente publicado como *sitio web estático* en las siguientes plataformas:
+
+###  Microsoft Azure (Blob Storage)
 https://arquitecno2026.z19.web.core.windows.net/
 
-El despliegue se realizó activando la opción Static Website dentro de un Storage Account y cargando manualmente los archivos del proyecto en el contenedor $web.
+###  GitHub Pages
+https://202322272.github.io/Portafolio-Arquitecno/
 
+Ambos despliegues fueron realizados manualmente, cumpliendo con los requisitos de publicación en la nube.
